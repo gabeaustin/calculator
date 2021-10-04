@@ -25,14 +25,23 @@
     </div>
 
     <div class="ui segment container">
-        <div class="ui grid">
-            <div class="ui input">
-                <input type="text" id="number-display"></input>
-            </div>
+      <div class="ui grid">
+        <div class="column">
+          <div class="ui segment">
+            <div class="ui orange left ribbon label">Total</div>
+            <p id="number-display"></p>
+          </div>
         </div>
+      </div>
 
       <div class="ui grid">
-        <button class="ui violet basic button" id="seven-button">7</button>
+        <button
+          class="ui violet basic button"
+          id="seven-button"
+          onClick="sevenButton()"
+        >
+          7
+        </button>
         <button class="ui violet basic button" id="eight-button">8</button>
         <button class="ui violet basic button" id="nine-button">9</button>
         <button class="ui grey basic button" id="divide-button">/</button>
@@ -46,20 +55,26 @@
       </div>
 
       <div class="ui grid">
-        <button class="ui violet basic button" id="one-button">1</button>
+        <button
+          class="ui violet basic button"
+          id="one-button"
+          onClick="oneButton()"
+        >
+          1
+        </button>
         <button class="ui violet basic button" id="two-button">2</button>
         <button class="ui violet basic button" id="three-button">3</button>
         <button class="ui grey basic button" id="subract-button">-</button>
       </div>
 
       <div class="ui grid">
-        <button class="ui violet basic button" id="zero">0</button>
+        <button class="ui violet basic button" id="zero-button">0</button>
         <button class="ui violet basic button" id="equal-button">=</button>
-        <!-- <button class="ui violet basic button">=</button> -->
         <button class="ui grey basic button" id="add-button">+</button>
       </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="calculator.js"></script>
   </body>
 </html>
